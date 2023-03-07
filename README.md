@@ -21,7 +21,7 @@ git clone https://www.github.com/BarbraRedPanda/bosnian-cutter/
 4. Click add temporary add-on
 5. Select enter the directory where the repo was cloned to and go find manifeset.json (main/manifest)
 
-##To-dos
+## To-dos
 1. Implement auto-filling titles, dates, authors
 2. Remember tag
 3. Hotkeys
