@@ -1,0 +1,51 @@
+html,
+body    {
+    width: 300px;
+    background: #d5c4a1;
+}
+
+.hidden {
+    display: none;
+}
+
+#cut{
+  text-align: center;
+  left: 50%;
+}
+
+.entry  {
+  transform: 50%;
+}
+
+label{
+  color: #282828;
+  font-weight: bold;
+}
+
+.para{
+  color: #282828;
+}
+
+
+
+input {
+  width: 75%;
+}
+
+
+button{
+    border: none;
+    border-radius: 25%;
+    width: 40%;
+    margin: 3% auto;
+    padding: 4px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: #a89984;
+    color: 1d2021;
+}
+
+button:hover {
+  background-color: #bdae93;
+}
