@@ -1,6 +1,7 @@
 # Bosnian Cutter
-By Parsa K of Brentwood KN
-Debate card cutter for Firefox inspired by the great nation of Bosnia 💪
+
+Debate card cutter for Firefox inspired by the great nation of Bosnia 💪 <br>
+Created by Parsa K of Brentwood KN
 
 ## Features
 ### Tagging
