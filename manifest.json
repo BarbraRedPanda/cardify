@@ -22,7 +22,7 @@
 
 "browser_action": {
     "default_icon": "icons/mrbeast.jpg",
-    "default_title": "MrBeasty",
+    "default_title": "Bosnian Cutter v0.1",
     "default_popup": "popup/popup.html",
     "browser_style": true
 },
