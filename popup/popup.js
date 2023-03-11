@@ -2,6 +2,7 @@
 //creates constant variables that hold the html elements for the button and error output, respectively
 const cutButton = document.getElementById("cutButton");
 const output = document.getElementById("para");
+const bypassButton = document.getElementById("bypassButton");
 
 //creates constant variables that hold the html elements for the input boxes
 const authorInput = document.getElementById("author");
@@ -126,7 +127,7 @@ function createCard() {
 function copyCard(card) {
     //copies card to clipboard; temporarily changes button's text if it works/fails
     navigator.clipboard.writeText(card).then(function() {
-        cutButton.textContent = "success";
+        cutButton.textContent = "Done!";
     }, function(err) {
         cutButton.textContent = "fail";
     });
@@ -140,4 +141,14 @@ function formatDate(date)  {
     return formattedDate;
 }
 
-
+//whenever the bypassButton is clicked, it changes the tab to the archive.ph equivallent
+bypassButton.addEventListener("click", (event) =>  {
+    browser.tabs.query({active: true, currentWindow: true}).then(function(tabs) {
+        var currentTab = tabs[0];
+        var oldURL = currentTab.url;
+        var truncatedURL = oldURL.substring(oldURL.indexOf('w'), oldURL.length);
+        console.log(truncatedURL);
+        // Update the current tab's URL to the new URL
+        browser.tabs.update(currentTab.id, {url: ("https://www.archive.ph/" + truncatedURL)});
+    });
+});
