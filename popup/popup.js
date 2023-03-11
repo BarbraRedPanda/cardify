@@ -7,6 +7,7 @@ const output = document.getElementById("para");
 const authorInput = document.getElementById("author");
 const dateInput = document.getElementById("date");
 const titleInput = document.getElementById("title");
+const urlInput = document.getElementById("url");
 const tagInput = document.getElementById("tag");
 
 //instantiates and stores the url of the tab which the popup is running on
@@ -15,40 +16,47 @@ let author = "";
 let date = "";
 var title = ""; 
 let tag = "";
+//querys for the active tab 
 browser.tabs.query({currentWindow: true, active: true}).then((tabs) => {
+    // stores the tab
     var currentTab = tabs[0];
+    // stores the URL of the active tab
     currentUrl = tabs[0].url;
+    // changes the value of the URL input the match the current URL
+    urlInput.value = currentUrl;
 });
 
 
 // sends a message to content script whenever the popup is opened
 browser.tabs.query({active: true, currentWindow: true}).then(function(tabs) {
-  // Send a message to the content script to retrieve the page title
-  browser.tabs.sendMessage(tabs[0].id, {action: "getTitle"}).then(function(response) {
-    // Update the title input in the popup with the retrieved page title
-    title = response.value;
 
-    titleInput.value = title;
-    console.log(title);
-  });
-  browser.tabs.sendMessage(tabs[0].id, {action: "getAuthor"}).then(function(response) {
-    // Update the author input 
-    author = response.value;
-    authorInput.value = author;
-    console.log(author);
-  });
-  browser.tabs.sendMessage(tabs[0].id, {action: "getDate"}).then(function(response) {
-    // Update the date input 
-    date = response.value;
-    dateInput.value = date;
-    console.log(date);
-  });
+    // Send a message to the content script to retrieve the page title
+    browser.tabs.sendMessage(tabs[0].id, {action: "getTitle"}).then(function(response) {
+        // Update the title input in the popup with the retrieved page title
+        title = response.value;
+
+        titleInput.value = title;
+        console.log(title);
+    });
+    browser.tabs.sendMessage(tabs[0].id, {action: "getAuthor"}).then(function(response) {
+        // Update the author input 
+        author = response.value;
+        authorInput.value = author;
+        console.log(author);
+    });
+    browser.tabs.sendMessage(tabs[0].id, {action: "getDate"}).then(function(response) {
+        // Update the date input 
+        date = response.value;
+        dateInput.value = date;
+        console.log(date);
+    });
 });
 
 //fills in any of the input slots with any information found 
 authorInput.value = author;
 dateInput.value = date;
 titleInput.value = title;
+urlInput.value = currentUrl;
 
 //whenever the cutButton button is clicked, it runs copyCard function
 cutButton.addEventListener("click", (event) =>  {
@@ -83,6 +91,7 @@ function createCard() {
     date = dateInput.value;
     title = titleInput.value;
     tag = tagInput.value;
+    currentUrl = urlInput.value;
     //creates a date and formats it
     var currentDate = new Date();
     var formattedDate = formatDate(currentDate);
