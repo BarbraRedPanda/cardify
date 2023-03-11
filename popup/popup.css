@@ -1,6 +1,6 @@
 html,
 body    {
-    width: 150px;
+    width: 300px;
     background: #d5c4a1;
 }
 
@@ -9,14 +9,9 @@ body    {
     display: none;
 }
 
-#cut{
-  text-align: center;
-  left: 50%;
-}
 
 .entry  {
   transform: 50%;
-  padding-left: 12.5%;
 }
 
 label{
@@ -29,23 +24,23 @@ label{
 }
 
 
-
 input {
-  width: 75%;
+  width: 100%;
+
+
 }
 
 
-button{
+.cutButton{
     border: none;
     border-radius: 25%;
-    width: 40%;
+    width: 60px;
     margin: 3% auto;
     padding: 4px;
     text-align: center;
     font-size: 1.5em;
     cursor: pointer;
     background-color: #a89984;
-    color: 1d2021;
 }
 
 button:hover {
