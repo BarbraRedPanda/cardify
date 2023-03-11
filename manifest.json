@@ -23,7 +23,7 @@
 ],
 
 "browser_action": {
-    "default_icon": "icons/mrbeast.jpg",
+    "default_icon": "icons/ali.png",
     "default_title": "Bosnian Cutter v0.9",
     "default_popup": "popup/popup.html",
     "browser_style": true
