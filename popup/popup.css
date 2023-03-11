@@ -1,8 +1,9 @@
 html,
 body    {
-    width: 300px;
+    width: 150px;
     background: #d5c4a1;
 }
+
 
 .hidden {
     display: none;
@@ -15,6 +16,7 @@ body    {
 
 .entry  {
   transform: 50%;
+  padding-left: 12.5%;
 }
 
 label{
