@@ -50,6 +50,8 @@ function getAuthor()  {
 }
 
 function getDate()  {
-  const date = window.document.querySelector("meta[property*='time']").getAttribute('content');
-  return date;
+  const rawDate = window.document.querySelector("meta[property*='time']").getAttribute('content').substring(0,10);
+  //const unix_timestamp = Date.parse(rawDate);
+  var date = new Date(rawDate);
+  return date.toDateString();
 }
