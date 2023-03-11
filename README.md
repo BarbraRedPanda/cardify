@@ -28,15 +28,16 @@ This table shows what is autofilled:
 | Tag   | ✅        |
 | DoA   | ✅        |
 ### Tagging
-*Automatically tags your cards 
-### Lightweight
-Low profile card cutter 
-
+* Automatically tags your cards 
+* Stores your tag so you don't have to retype it
 ### Customizable
-*Edit the source code to your liking and install it for yourself
-*Customize your tag
+* Edit the source code to your liking and install it for yourself
+* Customize your tag
+
 # To-dos
 1. Bypass paywalls (via Archive.ph)
 2. Cleaner UI/UX
+3. Chromium support
 3. Hotkeys
+4. Change theme in settings
 
