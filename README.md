@@ -24,6 +24,10 @@ git clone https://www.github.com/BarbraRedPanda/bosnian-cutter/
 5. Select enter the directory where the repo was cloned to and go find manifeset.json (main/manifest)
 
 ## To-dos
-1. Implement auto-filling titles, dates, authors
-2. Remember tag
+1. Implement auto-filling of:
+    * Title (✅)
+    * Date (½)
+    * Author (½)
+2. Remember tag/settings page
 3. Hotkeys
+4. Cleaner UI/UX
