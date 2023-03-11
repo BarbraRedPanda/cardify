@@ -20,7 +20,6 @@
 
   return "joe";
 }*/
-
 //sends article title to background script
 browser.runtime.onMessage.addListener(function(message, sender, sendResponse) {
   if (message.action === "getTitle") {
