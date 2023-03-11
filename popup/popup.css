@@ -1,7 +1,7 @@
 html,
 body    {
     width: 300px;
-    background: #d5c4a1;
+    background: #282828;
 }
 
 
@@ -12,37 +12,65 @@ body    {
 
 .entry  {
   transform: 50%;
+  padding-left: 5px;
+  padding-bottom: 9px;
+  padding-top: 9px;
 }
 
 label{
-  color: #282828;
+  color: #ebdbb2;
   font-weight: bold;
 }
 
-.para{
-  color: #282828;
+#para{
+  color: #ebdbb2;
 }
 
 
 input {
-  width: 100%;
+  width: 70%;
+  height: 20px;
+  border-radius: 0%;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid #ebdbb2;
+  color: #ebdbb2;
+}
+
+input:focus {
+  outline: 0px;
+}
 
 
+#url{
+  font-size: 8px;
+  width: 85%;
 }
 
 
 button{
     border: none;
-    border-radius: 25%;
+    border-radius: 5%;
     width: 60px;
     margin: 3% auto;
     padding: 4px;
     text-align: center;
     font-size: 1.5em;
     cursor: pointer;
-    background-color: #a89984;
+    background-color: #d5c4a1;
+    width: fit-content;
+}
+
+
+#buttons  {
+  padding-left: 5px;
+}
+
+
+#paywallButton  {
+  font-size: 1.25em;
 }
 
 button:hover {
-  background-color: #bdae93;
+  background-color: #ebdbb2;
 }
