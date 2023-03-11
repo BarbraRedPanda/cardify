@@ -3,10 +3,10 @@
 "description": "Best debate cardcutter for firefox east (and west) of the mississippi",
 "manifest_version": 2,
 "name": "Bosnian Cutter",
-"version": "0.1",
+"version": "0.9",
 "homepage_url": "https://www.github.com/barbraredpanda/bosnian-cutter",
 "icons": {
-    "48": "icons/mrbeast.jpg"
+    "48": "icons/ali.png"
 },
 
 "content_scripts": [
@@ -24,7 +24,7 @@
 
 "browser_action": {
     "default_icon": "icons/mrbeast.jpg",
-    "default_title": "Bosnian Cutter v0.1",
+    "default_title": "Bosnian Cutter v0.9",
     "default_popup": "popup/popup.html",
     "browser_style": true
 },
@@ -39,10 +39,9 @@
 
 "browser_specific_settings": {
     "gecko": {
-      "id": "addon@bruh.bigchungus.rocks"
+      "id": "addon@bigchungus.rocks"
     }
 }
-
 
   
 
