@@ -27,6 +27,8 @@ This table shows what is autofilled:
 | URL   | ✅        |
 | Tag   | ✅        |
 | DoA   | ✅        |
+### Bypass paywalls
+Redirects you to the article's mirror's on archive.ph
 ### Tagging
 * Automatically tags your cards 
 * Stores your tag so you don't have to retype it
@@ -35,9 +37,7 @@ This table shows what is autofilled:
 * Customize your tag
 
 # To-dos
-1. Bypass paywalls (via Archive.ph)
-2. Cleaner UI/UX
-3. Chromium support
-3. Hotkeys
-4. Change theme in settings
+1. Chromium support
+2. Hotkeys
+3. Change theme in settings
 
