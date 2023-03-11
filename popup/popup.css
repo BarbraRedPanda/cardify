@@ -31,7 +31,7 @@ input {
 }
 
 
-.cutButton{
+button{
     border: none;
     border-radius: 25%;
     width: 60px;
