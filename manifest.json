@@ -31,7 +31,17 @@
 
 "web_accessible_resources": [
     "content.js"
-]
+],
+
+"options_ui":   {
+    "page": "settings/settings.html"
+},
+
+"browser_specific_settings": {
+    "gecko": {
+      "id": "addon@bruh.bigchungus.rocks"
+    }
+}
 
 
   
