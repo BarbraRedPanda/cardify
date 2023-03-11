@@ -26,7 +26,7 @@ git clone https://www.github.com/BarbraRedPanda/bosnian-cutter/
 ## To-dos
 1. Implement auto-filling of:
     * Title (✅)
-    * Date (½)
+    * Date (✅)
     * Author (½)
 2. Remember tag/settings page
 3. Hotkeys
