@@ -37,7 +37,8 @@ Redirects you to the article's mirror's on archive.ph
 * Customize your tag
 
 # To-dos
-1. Chromium support
+1. Popup doesn't close on scroll
+2. Chromium support (probably takes a long time)
 2. Hotkeys
 3. Change theme in settings
 
