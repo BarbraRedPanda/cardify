@@ -27,7 +27,7 @@ This table shows what is autofilled:
 | URL   | ✅        |
 | Tag   | ✅        |
 | DoA   | ✅        |
-| Pu    | ❌        |
+| Pub   | ❌        |
 ### Bypass paywalls
 Redirects you to the article's mirror's on archive.ph (on most sites)
 ### Tagging
