@@ -27,8 +27,9 @@ This table shows what is autofilled:
 | URL   | ✅        |
 | Tag   | ✅        |
 | DoA   | ✅        |
+| Pu    | ❌        |
 ### Bypass paywalls
-Redirects you to the article's mirror's on archive.ph
+Redirects you to the article's mirror's on archive.ph (on most sites)
 ### Tagging
 * Automatically tags your cards 
 * Stores your tag so you don't have to retype it
@@ -37,8 +38,9 @@ Redirects you to the article's mirror's on archive.ph
 * Customize your tag
 
 # To-dos
-1. Popup doesn't close on scroll
-2. Chromium support (probably takes a long time)
+1. Popup stays open on scroll
+2. Scihub paywall bypass
+3. Chromium support (probably takes a long time)
 2. Hotkeys
 3. Change theme in settings
 
