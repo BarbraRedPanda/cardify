@@ -10,6 +10,9 @@ const dateInput = document.getElementById("date");
 const titleInput = document.getElementById("title");
 const urlInput = document.getElementById("url");
 const tagInput = document.getElementById("tag");
+const calendarInput = document.getElementById("calendar");
+
+
 
 /*
 Note: 
@@ -22,10 +25,23 @@ b) there's no point in global variables if they are going to be varied by the us
 
 
 // Get the tag value from storage and autofills it into the popup
-browser.storage.local.get('tag').then(function(result) {
+/*browser.storage.local.get('tag').then(function(result) {
     tag = result.tag;
     tagInput.value = tag;
 });
+browser.storage.local.get('calendar').then(function(result) {
+    calendar = result.calendar;
+    calendarInput.value = calendar;
+});*/
+
+
+browser.storage.local.get(['tag', 'calendar'], (result) => {
+ 
+    const { tag, calendar } = result;
+    tagInput.value = tag;
+    calendarInput.value = calendar;
+});
+
 
 // Gets the URL of the active tab and autofills the popup
 //queries for the active tab 
@@ -99,8 +115,9 @@ function createCard() {
     var author = authorInput.value
     var date = dateInput.value;
     var title = titleInput.value;
-    var tag = tagInput.value;
+    var tag2 = tagInput.value;
     var url = urlInput.value;
+    var calendar2 = calendarInput.value;
     //creates a date and formats it
     var currentDate = new Date();
     var formattedDate = formatDate(currentDate);
@@ -109,7 +126,7 @@ function createCard() {
     //concatenates information into the cite in the following format:
     // Name (Date) "Title", url. Accessed on Date2. Tag
     cites += author + " (" + date + ") \"" + title + "\", " + url + ". Accessed on " + formattedDate + 
-            ". //" + tag;
+            ". Calendar: " + calendar2 + " //" + tag2;
     
     //consolidates the cites and the evidence under a card
     let card = ""; 
