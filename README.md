@@ -1,6 +1,6 @@
 # Bosnian Cutter
 
-Lightweight debate card cutter for Firefox inspired by the great nation of Bosnia 💪 <br>
+First lightweight debate card cutter for Firefox (and Gecko-based browsers)  <br>
 Created by Parsa K of Brentwood KN
 
 ### Installation
