@@ -1,6 +1,6 @@
 # Bosnian Cutter
 
-Debate card cutter for Firefox inspired by the great nation of Bosnia 💪 <br>
+Lightweight debate card cutter for Firefox inspired by the great nation of Bosnia 💪 <br>
 Created by Parsa K of Brentwood KN
 
 ### Installation
@@ -22,11 +22,12 @@ This table shows what is autofilled:
 | Field | Support   |
 |-------|:---------:|
 | Title | ✅        | 
-| Author| Some sites|
+| Author| Most sites|
 | Date  | ✅        |
 | URL   | ✅        |
 | Tag   | ✅        |
 | DoA   | ✅        |
+| Calendar   | ✅        |
 | Pub   | ❌        |
 ### Bypass paywalls
 Redirects you to the article's mirror's on archive.ph (on most sites)
@@ -40,7 +41,7 @@ Redirects you to the article's mirror's on archive.ph (on most sites)
 # To-dos
 1. Popup stays open on scroll
 2. Scihub paywall bypass
-3. Chromium support (probably takes a long time)
+3. Chromium support
 2. Hotkeys
 3. Change theme in settings
 
