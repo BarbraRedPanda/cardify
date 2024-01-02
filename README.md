@@ -1,4 +1,4 @@
-# Bosnian Cutter
+# Cardify
 
 First lightweight debate card cutter for Firefox (and Gecko-based browsers)  <br>
 Created by Parsa K of Brentwood KN
@@ -7,7 +7,7 @@ Created by Parsa K of Brentwood KN
 > Note: The extension will eventually be uploaded to the Mozilla Add-Ons store
 1. Download the sourcecode
 ```
-git clone https://www.github.com/BarbraRedPanda/bosnian-cutter/
+git clone https://www.github.com/BarbraRedPanda/cardify/
 ```
 2. Enter Add-ons and themes in Firefox (Ctrl+Shift+A) and go into extensions
 3. Click the gear icon and select "Debug Add-ons"
@@ -22,25 +22,25 @@ This table shows what is autofilled:
 | Field | Support   |
 |-------|:---------:|
 | Title | ✅        | 
-| Author| Most sites|
-| Date  | ✅        |
+| Author| 🟨|
+| Date  | 🟨        |
 | URL   | ✅        |
 | Tag   | ✅        |
 | DoA   | ✅        |
 | Calendar   | ✅        |
-| Pub   | ❌        |
+| Publisher   | 🟨        |
 ### Bypass paywalls
 Redirects you to the article's mirror's on archive.ph (on most sites)
 ### Tagging
 * Automatically tags your cards 
-* Stores your tag so you don't have to retype it
+* Stores your tag so you don't have to retype it (go to extensions settings)
 ### Customizable
 * Edit the source code to your liking and install it for yourself
 * Customize your tag
 
-# To-dos
+# Coming Soon!
 1. Popup stays open on scroll
-2. Scihub paywall bypass
+2. Sci-Hub paywall bypass
 3. Chromium support
 2. Hotkeys
 3. Change theme in settings
